@@ -28,10 +28,10 @@ So the steps to use this plugin are:
    $ minisign -G
    ```
 1. Add code to verify update packages to the update code for your downloads, and include your public key.
-1. Use your private key to digitally sign your packages for future updates:
+1. Use your private key to digitally sign your packages for future updates (a [helper script](https://github.com/JDGrimes/edd-sl-cryptographic-signatures/blob/develop/bin/sign-package.sh) is provided for this purpose):
 
    ```
-   $ minisign -Sm my-download.zip
+   $ bin/sign-package.sh my-download.zip
    ```
     ...and supply the signatures to the update API using this plugin (see below).
 
