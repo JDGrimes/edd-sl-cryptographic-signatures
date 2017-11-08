@@ -57,15 +57,15 @@ function edd_sl_cryptographic_signatures_download_file_table_row( $post_id, $key
 	?>
 
 	<div class="edd-sl-cryptographic-signature">
-		<span class="edd-repeatable-row-setting-label"><?php _e( 'Ed25519 Signature', 'easy-digital-downloads' ); ?></span>
+		<span class="edd-repeatable-row-setting-label"><?php esc_html_e( 'Ed25519 Signature', 'easy-digital-downloads' ); ?></span>
 		<?php
 
-		echo EDD()->html->text(
+		echo EDD()->html->text( // WPCS: XSS OK.
 			array(
 				'name'        => 'edd_download_files[' . $key . '][ed25519_signature]',
 				'value'       => $ed25519_signature,
 				'placeholder' => __( 'Ed25519 Signature', 'easy-digital-downloads' ),
-				'class'       => 'edd_repeatable_ed25519_signature_field large-text'
+				'class'       => 'edd_repeatable_ed25519_signature_field large-text',
 			)
 		);
 
@@ -137,4 +137,4 @@ function edd_sl_cryptographic_signatures_get_for_download(
 	return $all_files[ $file_key ]['ed25519_signature'];
 }
 
-// EOF
+// EOF.

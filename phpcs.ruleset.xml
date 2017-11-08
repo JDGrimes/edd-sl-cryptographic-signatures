@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ruleset>
+	<rule ref="WordPress">
+		<exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen" />
+		<exclude name="Generic.Functions.FunctionCallArgumentSpacing.SpaceBeforeComma" />
+	</rule>
+</ruleset>
