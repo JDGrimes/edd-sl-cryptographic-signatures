@@ -1,4 +1,4 @@
-# EDD SL Cryptographic Signatures
+# EDD SL Cryptographic Signatures [![Build Status](https://travis-ci.org/JDGrimes/edd-sl-cryptographic-signatures.svg?branch=develop)](https://travis-ci.org/JDGrimes/edd-sl-cryptographic-signatures)
 
 This WordPress plugin is an extension for the Easy Digital Downloads plugin, and integrates with its Software Licenses extension to provide cryptographic signatures for download packages.
 
