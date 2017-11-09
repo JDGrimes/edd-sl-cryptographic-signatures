@@ -27,7 +27,7 @@ So the steps to use this plugin are:
    ```
    $ minisign -G
    ```
-1. Add code to verify update packages to the update code for your downloads, and include your public key.
+1. Add code to verify update packages to the update code for your downloads, and include your public key. (You can utilize [sodium_compat](https://github.com/paragonie/sodium_compat) to help with this; see [WordPoints/wordpoints@266ee29](https://github.com/WordPoints/wordpoints/commit/266ee29a40f498d336214f5bbc173d7e3cd35c96) for a rough example.)
 1. Use your private key to digitally sign your packages for future updates (a [helper script](https://github.com/JDGrimes/edd-sl-cryptographic-signatures/blob/develop/bin/sign-package.sh) is provided for this purpose):
 
    ```
